@@ -1,5 +1,5 @@
 import { SidebarProvider } from "@/components/ui/sidebar"
-import { SquarePlay } from "lucide-react"
+import { SquarePlay, Plus } from "lucide-react"
 import {
     Sidebar, SidebarContent,
     SidebarGroup,
@@ -16,8 +16,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     // Menu items.
     const items = [
         {
+            title: "New transcription",
+            url: "/",
+            icon: Plus
+        },
+        {
             title: "My uploads",
-            url: "#",
+            url: "/my-uploads",
             icon: SquarePlay,
         },
     ]
